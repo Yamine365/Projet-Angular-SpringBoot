@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'] // Remarquez le "s" à "styleUrls"
+    ,
+    standalone: false
+})
+export class AppComponent {
+  title = 'Excel';
+}

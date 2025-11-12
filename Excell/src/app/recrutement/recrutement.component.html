@@ -1,0 +1,67 @@
+<!-- src/app/recrutement/recrutement.component.html -->
+<div class="container mt-5">
+  <h2 class="text-center">Formulaire de Recrutement</h2>
+  <form (ngSubmit)="onSubmit()" #recrutementForm="ngForm">
+
+    <!-- Nom -->
+    <div class="form-group">
+      <label for="nom">Nom</label>
+      <input type="text" class="form-control" id="nom" name="nom" required [(ngModel)]="recrutement.nom" #nom="ngModel">
+      <div *ngIf="nom.invalid && nom.touched" class="text-danger">
+        Le nom est requis.
+      </div>
+    </div>
+
+    <!-- Prénom -->
+    <div class="form-group">
+      <label for="prenom">Prénom</label>
+      <input type="text" class="form-control" id="prenom" name="prenom" required [(ngModel)]="recrutement.prenom" #prenom="ngModel">
+      <div *ngIf="prenom.invalid && prenom.touched" class="text-danger">
+        Le prénom est requis.
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required [(ngModel)]="recrutement.email" #email="ngModel">
+      <div *ngIf="email.invalid && email.touched" class="text-danger">
+        L'email est requis et doit être valide.
+      </div>
+    </div>
+
+    <!-- Téléphone -->
+    <div class="form-group">
+      <label for="telephone">Téléphone</label>
+      <input type="tel" class="form-control" id="telephone" name="telephone" required [(ngModel)]="recrutement.telephone" #telephone="ngModel">
+      <div *ngIf="telephone.invalid && telephone.touched" class="text-danger">
+        Le téléphone est requis.
+      </div>
+    </div>
+
+    <!-- Adresse -->
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <input type="text" class="form-control" id="adresse" name="adresse" required [(ngModel)]="recrutement.adresse" #adresse="ngModel">
+      <div *ngIf="adresse.invalid && adresse.touched" class="text-danger">
+        L'adresse est requise.
+      </div>
+    </div>
+
+    <!-- Lettre de motivation (Téléchargement de fichier) -->
+    <div class="form-group">
+      <label for="lettre">Téléchargez votre Lettre de Motivation</label>
+      <input type="file" class="form-control" id="lettre" name="lettre" >
+    </div>
+
+    <!-- CV (Téléchargement de fichier) -->
+    <div class="form-group">
+      <label for="cv">Téléchargez votre CV</label>
+      <input type="file" class="form-control" id="cv" name="cv" >
+    </div>
+
+    <!-- Soumettre le formulaire --> <!-- la deuxieme classe de le button est btn-primary -->
+    <button type="submit" class="btn btn-primary" [disabled]="recrutementForm.invalid">Envoyer</button>
+
+  </form>
+</div>

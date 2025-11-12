@@ -1,0 +1,348 @@
+/* Style pour le header */
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div .logo img {
+  height: 50px; /* Ajuster la taille du logo */
+}
+
+//.bg-light {
+  //background-color: url('/assets/images/bienvenue.png');
+//}
+
+.bg-light1 {
+  background-image: url('/assets/images/bienvenue.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+div .d-flex {
+  gap: 10px;
+}
+
+/* Boutons */
+.btn {
+  font-weight: bold;
+}
+.img-fluid {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #afa054;
+}
+
+.btn-primary0 {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary0:hover {
+  background-color: #5138f7; 
+}
+.img-fluid:hover {
+  background-color: #5138f7; 
+}
+
+/* Section de la page d'accueil */
+.container-fluid {
+  padding: 5rem 2rem;
+  margin-top: 200px;
+}
+
+h1.display-4 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #333333;
+  -webkit-text-stroke: 1px white;
+  //position: absolute;
+  //padding-bottom: 2px;
+  //text-align: center;
+}
+
+//.lead {
+ // font-size: 1.3rem;
+ // line-height: 1.9;
+//  color: white;
+  //-webkit-text-stroke: 0.6px rgb(193, 85, 19);
+//}
+
+
+/* Pour les images de services */
+.card-img-top {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  /* Pour les images "Qui sommes-nous ?" */
+  #about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ajout d'un padding pour la section "Services" */
+  #services .card {
+    margin-bottom: 30px;
+  }
+  
+  #about, #mission {
+    margin-top: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Pour une meilleure présentation des sections */
+  section {
+    margin-top: 50px;
+  }
+
+  /* Vous pouvez ajouter des styles personnalisés pour ajuster l'apparence des images */
+.img-fluid {
+  width: 40px; 
+}
+
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.expertise {
+  background-color: #43a047;
+}
+
+.social {
+  background-color: #e53935;
+}
+
+.audit {
+  background-color: #1e88e5;
+}
+
+.fiscalite {
+  background-color: #fbc02d;
+}
+
+.juridique {
+  background-color: #8e24aa;
+}
+
+.international {
+  background-color: #ff5722;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Style global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style de la section */
+#mission {
+  background: linear-gradient(to right, #00c6ff, #0072ff); /* Dégradé de fond */
+  color: white;
+  padding: 80px 0; /* Espacement vertical */
+  border-radius: 8px;
+  
+}
+
+#mission .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 355px;
+}
+
+/* Style pour les colonnes */
+.col-md-6 {
+  flex: 1;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol des colonnes */
+.col-md-6:hover {
+  transform: scale(1.05); /* Zoom sur la colonne au survol */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenu des valeurs */
+.values-content {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.values-content:hover {
+  background-color: rgba(255, 255, 255, 1); /* Changement de couleur au survol */
+}
+
+/* Titre de la section */
+.values-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase; /* Met en majuscule */
+  letter-spacing: 1px;
+}
+
+/* Liste des valeurs */
+.values-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.values-content ul li {
+  font-size: 18px;
+  color: #555;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.values-content ul li:hover {
+  color: #0072ff;
+  padding-left: 10px; /* Légère animation de décalage */
+}
+
+.values-content ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #0072ff;
+}
+
+/* Boutons */
+.values-content .btn {
+  background-color: #28a745; /* Vert */
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.values-content .btn:hover {
+  background-color: #218838; /* Changement de couleur au survol */
+}
+
+/* Effet d'ombre sur le bouton au survol */
+.values-content .btn:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section avec mission et valeurs */
+.mission-content,
+.values-content {
+  text-align: center;
+}
+
+/* Animation au défilement */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation à la mission */
+.mission-content,
+.values-content {
+  animation: slideIn 1s ease-out;
+}
+
+/* Media queries pour responsivité */
+@media (max-width: 767px) {
+  #mission .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+
+  .values-content h2 {
+    font-size: 24px;
+  }
+
+  .values-content ul li {
+    font-size: 16px;
+  }
+
+  .values-content .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+//footer 
+.copy2025{
+  color: blanchedalmond;
+}

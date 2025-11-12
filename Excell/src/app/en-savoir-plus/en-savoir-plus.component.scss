@@ -1,0 +1,134 @@
+/* Styles pour la page "En savoir plus" */
+
+/* En-tête de la page */
+.about-header {
+  text-align: center;
+  padding: 50px;
+  background-color: #0072ff;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section principale */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.about-content {
+  width: 48%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Section équipe */
+.about-team {
+  text-align: center;
+  padding: 40px;
+  background-color: #e6f7ff;
+}
+
+.about-team h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-team .team-members {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-team .team-member {
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-team .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-team .team-member h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.about-team .team-member p {
+  font-size: 16px;
+  color: #0072ff;
+}
+
+/* Section des valeurs */
+.about-values {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-values h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.about-values li {
+  margin: 10px 0;
+}
+
+/* Footer de la page */
+.about-footer {
+  padding: 30px;
+  background-color: #0072ff;
+  text-align: center;
+  color: white;
+}
+
+.about-footer .btn-contact {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0072ff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.about-footer .btn-contact:hover {
+  background-color: #f0f0f0;
+}
